@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1,
+h2{
+    color:white;
+}
+h3{
+    color:white;
+    font-size: 1.1rem;
+}
+.btn
+{
+    
+
+
+    background-color: #13547a;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    height: 5vh;
+    margin-top: 2px;
+    /* border-radius: 2% 2%; */
+ 
+}
+.btn:hover{
+    background-color: #5187a6;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+.side-menu
+{
+    position: fixed;
+    /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
+    background-color: #005774;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+}
+.side-menu li{
+    font-size: 20px;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.side-menu li:hover{
+    /* background-color: #2a5298; */
+    background-image: linear-gradient(to top, #34679a 0%, rgb(176, 222, 245) 100%);
+    color: #1e3c72;
+}
+.container{
+    position: absolute;
+    right:0;
+    width: 80vw;
+    height: 100vh;
+    background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
+}
+.container .header
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 8vh;
+    background:white;
+    /* box-shadow: 0 4px 8px white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container .header .nav
+{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container .header .nav .search
+{
+    flex-basis: 3;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    /* background-color: green; */
+}
+.container .header .nav .search input[type=text]
+{
+        border: none;
+        background-color: #fdfdfd;
+        padding: 10px;
+        width: 70%;
+        box-shadow: -2px 3px 3px rgb(127, 127, 127);
+}
+.container .header .nav .search button{
+    width: 20%;
+    height: 38px;
+    border: none;
+    background-color: rgb(127, 127, 127);
+    box-shadow: -2px 3px 3px black;
+    color: white;
+}
+.container .header .nav .user
+{
+    
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    position: relative;
+
+ 
+}
+img{
+    background-color: rgb(3, 45, 57);
+    height: 6vh;
+    border-radius: 50%;
+    margin-top: 10px;
+ 
+}
+.container .content
+{
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+}
+.container .content .cards
+{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .content .cards .card
+{
+        width: 250px;
+        height: 150px;
+        background-color: #005774;
+        margin: 20px 10px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        box-shadow: -9px 7px 8px rgb(151, 151, 151);
+}
+
+.container .content .content-2
+{
+    /* background-color: #005774; */
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .content .content-2 .value-data-payment
+{
+        min-height: 50vh;
+        flex: 5;
+        background-color: #fdfdfd;
+        margin: 0  25px 25px;
+        box-shadow: -9px 7px 8px rgb(151, 151, 151);
+        display: flex;
+        flex-direction: column;
+
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid black;
+}
+table
+{
+    padding: 10px;
+
+}
+th,td
+{
+        text-align: left;
+        padding: 8px;
+}
+.container .content .content-2 .new-value-data
+{
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: -9px 7px 8px rgb(151, 151, 151);
+}
+ul
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 50px;
+}
