@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbarhead{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.nav-link{
+   
+   border: 2px solid black;
+   margin: 5px;
+   border-radius: 20px;
+   background-color: rgb(9, 84, 134);
+   color: white;
+}
+
+.navhead-links{
+    justify-content: flex-end;
+}
+.imgslider{
+    width: 100%;
+    height: 600px;
+    background-image: url('COLLEGE.jpg');
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    animation:changeImages 20s linear infinite ;
+}
+@keyframes changeImages
+{
+    0%{
+        background-image: url('asset\ 26.avif');
+    }
+    25%{
+        background-image: url('asset\ 28.avif');
+    }
+    50%{
+        background-image: url('asset\ 29.avif');
+    }
+    100%{
+        background-image: url('asset\ 27.avif');
+    }
+
+}
+.cards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.change-link{
+    cursor: pointer;
+}
+/* pop up form */
+.popup-form
+{
+    width: 40%;
+    /* background-color: #ffffff; */
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+  /* center position */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+    box-shadow: -5px 4px 5px white;
+    color: black;
+}
+.open-Popup{
+    visibility:visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+
+}
+
+form{
+   
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+  
+}
+label
+{
+    text-align: start;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+.input-area
+{
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.button
+{
+    
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 5px;
+    margin-right: 20px;
+}
+/* msg print popup */
+/* .popup{
+    width: 400px;
+    background-color: #989898;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: chartreuse;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.open-Popup{
+    visibility:visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.2);
+}
+.popup h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0 10ppx;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50%;
+    padding: 10px 0;
+    background-color: skyblue;
+    color: gold;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+} */
+
