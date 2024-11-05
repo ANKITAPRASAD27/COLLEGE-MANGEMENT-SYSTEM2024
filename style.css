@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbarhead{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+
+}
+.navhead-links{
+    justify-content: flex-end;
+}
+.cards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+.GALARY{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.gellary1
+{
+        /* gap: 20px; */
+        display: flex;
+        flex-direction:row;
+        gap: 66px;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+}
+.gellary2
+{
+        /* gap: 20px; */
+        display: flex;
+        flex-direction:row;
+        gap: 66px;
+        justify-content: space-between;
+}
+.student-link{
+    cursor: pointer;
+}
+/* pop up form */
+.popup-form
+{
+    width: 40%;
+    /* background-color: #ffffff; */
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+  /* center position */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+    box-shadow: -5px 4px 5px white;
+    color: black;
+}
+.open-Popup{
+    visibility:visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+
+}
+
+form{
+   
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+  
+}
+label
+{
+    text-align: start;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+.input-area
+{
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.button
+{
+    
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 5px;
+    margin-right: 20px;
+}
+/* msg print popup */
+/* .popup{
+    width: 400px;
+    background-color: #989898;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: chartreuse;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.open-Popup{
+    visibility:visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.2);
+}
+.popup h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0 10ppx;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50%;
+    padding: 10px 0;
+    background-color: skyblue;
+    color: gold;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+} */
+
